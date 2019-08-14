@@ -1,0 +1,29 @@
+@import "fonts";
+
+h1 {
+  color: red;
+  padding: 2rem 0;
+  font-family: quicksandregular;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  color: turquoise;
+  font-family: quicksandregular;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper {
+  background: pink;
+  padding: 10px;
+  &__child {
+    background: blue;
+    padding: 10px;
+    margin: 10px;
+    &--tall {
+      height: 200px;
+    }
+  }
+}
