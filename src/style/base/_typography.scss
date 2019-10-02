@@ -1,7 +1,31 @@
 @font-face {
-    font-family: 'quicksandregular';
-    src: url('/fonts/quicksand-regular-webfont.woff2') format('woff2'),
-        url('/fonts/quicksand-regular-webfont.woff') format('woff');
+    font-family: 'Montserrat', sans-serif;
+    src: url('/fonts/Montserrat-regular-webfont.woff2') format('woff2'),
+        url('/fonts/Montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-paragraph {
+    font-family: 'OpenSans', sans-serif;
+    src: url('/fonts/OpenSans-regular-webfont.woff2') format('woff2'),
+        url('/fonts/OpenSans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-small {
+    font-family: 'Lora', serif;
+    src: url('/fonts/Lora-regular-webfont.woff2') format('woff2'),
+        url('/fonts/Lora-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-other {
+    font-family: 'PlayfairDisplay, serif;
+    src: url('/fonts/PlayfairDisplay-regular-webfont.woff2') format('woff2'),
+        url('/fonts/PlayfairDisplay-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
