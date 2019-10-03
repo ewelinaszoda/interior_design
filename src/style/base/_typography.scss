@@ -1,31 +1,48 @@
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('/fonts/Montserrat-regular-webfont.woff2') format('woff2'),
-        url('/fonts/Montserrat-regular-webfont.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-paragraph {
-    font-family: 'OpenSans', sans-serif;
-    src: url('/fonts/OpenSans-regular-webfont.woff2') format('woff2'),
-        url('/fonts/OpenSans-regular-webfont.woff') format('woff');
+@font-face {
+    font-family: 'Montserrat-Bolt';
+    src: url('/dist/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('/dist/fonts/Montserrat-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-small {
-    font-family: 'Lora', serif;
-    src: url('/fonts/Lora-regular-webfont.woff2') format('woff2'),
-        url('/fonts/Lora-regular-webfont.woff') format('woff');
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('/fonts/OpenSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-@font-other {
-    font-family: 'PlayfairDisplay, serif;
-    src: url('/fonts/PlayfairDisplay-regular-webfont.woff2') format('woff2'),
-        url('/fonts/PlayfairDisplay-regular-webfont.woff') format('woff');
+// url('../../fonts/Lora-Regular.woff' - the font is taking form src folder. Using gulp the brower needs taking from disc
+@font-face {
+    font-family: 'Lora';
+    src: url('/fonts/Lora-Regular.woff')format('woff2'),
+        url('/fonts/Lora-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+// browser takes a font z disc folder so the folder font from dist - using the gulp
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('/fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+// second font as a backup
+h1 {
+    font-family: 'Montserrat'; 
+
+}
+
+h2 {
+    font-family: 'PlayfairDisplay';
 }
