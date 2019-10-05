@@ -1,8 +1,9 @@
 /* abstracts is on the top, because all what is lower has access what it is higer - cascading. All what is higer has not access what it is lower */
 @import "abstracts/variables"; 
 @import "base/typography";
-@import "layouts/header";
 @import "base/resets";
+@import "layouts/header";
+@import "layouts/aside";
 
 .wrapper {
   background: pink;
