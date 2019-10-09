@@ -1,0 +1,31 @@
+.hero {
+    margin: 70px;
+    background-image: url('/images/image1.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //punkt odniesienia
+    position: relative;
+    &__text {
+        //to co manewruje 
+        position: absolute;
+        background-color: $color-yellow;
+        height: 440px;
+        width: 440px;
+        top: 0;
+        right: 0;
+        text-align: right;
+        padding: 16px;
+        h1 {
+            margin-bottom: 16px;
+        }
+        a {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 13px;
+            text-decoration: none;
+            border-bottom: 2px solid #ecd9ab;
+        }
+    }
+}
