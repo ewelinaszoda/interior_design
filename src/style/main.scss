@@ -6,15 +6,3 @@
 @import "layouts/aside";
 @import "layouts/section";
 
-.wrapper {
-  background: pink;
-  padding: 10px;
-  &__child {
-    background: blue;
-    padding: 10px;
-    margin: 10px;
-    &--tall {
-      height: 200px;
-    }
-  }
-}

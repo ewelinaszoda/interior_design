@@ -54,3 +54,40 @@ h4 {
 a {
     font-family: 'Montserrat-Bold', sans-serif;
 }
+
+.title {
+    font-family: 'PlayfairDisplay' , serif;
+    color: $title;
+    font-size: 20px;
+    font-style: italic;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: $font-header;
+    font-size: 35px;
+    margin: 0 0 22px;
+}
+strong {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-yellow;
+    font-size: 45px;
+}
+p {
+    font-family: 'OpenSans';
+    color: $grey-p;
+    font-size: 16px;
+}
+.styled-text {
+    font-family: 'Lora', serif;
+    color: $title;
+    font-style: italic;
+    font-size: 20px;
+}
+p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+p2 {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+}

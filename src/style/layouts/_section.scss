@@ -1,6 +1,6 @@
 .hero {
     margin: 70px;
-    background-image: url('/images/image1.jpg');
+    background-image: url('/images/hero.jpg');
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,4 +28,76 @@
             border-bottom: 2px solid #ecd9ab;
         }
     }
+}
+.introduction {
+    display: flex;
+    position: relative;
+    margin: 100px 70px 0 70px;
+    padding-bottom: 100px;
+    &__text {
+        display: inline-block;
+        width: 58%;
+    }
+    .title {
+        margin-bottom: 5px;
+    }
+    h3, strong {
+        font-style: bold;
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    .styled-text {
+        margin-bottom: 25px;
+    }
+    a {
+        color: $color-yellow;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    &__image {
+        position: relative;
+        display: inline-block;
+        box-align: right;
+        padding: 30px 30px 0 0;
+        background: $color-yellow;
+        background-size: 381.25px 480.7;
+            &__square {
+                position: absolute;
+                width:381.25px;
+                height: 480.7px;
+                right: 100px;
+                bottom: 100px;
+                color: $color-yellow;
+            }
+    }
+}
+.specilization {
+    background-color: grey;
+    //background-image: url();
+    //background-repeat: no-repeat;
+    //background-size: cover;
+   // background-position: center;
+    position: relative;
+    margin: 0 70px;
+    padding: 100px 0 60px 180px;
+    .container {
+    }
+    h3 {
+        color: $white;
+    }
+    p1 {
+        color: $white;
+        margin-bottom: 10px;
+    }
+    p2 {
+        color: $white;
+        margin-bottom: 40px;
+    }
+}
+.projects {
+    position: relative;
+    margin: 0 70px;
+    padding: 100px 0 60px 180px;
 }
