@@ -1,19 +1,24 @@
 .aside {
     width: 70px;
-    height: 90vh;
-    padding-top: 70px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
     justify-content: space-between;
     // sticky header using position: fixed
     position: fixed;
+    z-index: 1;
+    //start from top
+    top:0;
+    //start from left
     left: 0;
     background-color: $white;
     &__text {
         transform: rotate(-90deg);
         width: 250px;
         height: 200px;
+        font-size: 16px;
+        color: $grey-dark;
     }
     &__social {
         &__icon {

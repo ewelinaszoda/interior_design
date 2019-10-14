@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- metatag makes compatible with Internet Explorer-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
     <title>Webpack Project</title>
     <link rel="stylesheet" href="main.bundle.css" />
-    
   </head>
-
   <body>
     <header class="header">
       <!-- / for main disc source but . or ../.. for src source  - browser needs main disc when the tool is gulp -->
@@ -52,9 +49,9 @@
       </div>
     </header>
     <aside class="aside">
-      <h4 class="aside__text"> 
+      <h3 class="aside__text"> 
           CALL US:1800 458 8478
-      </h4>
+      </h3>
       <div class="aside__social">
         <a href="https://www.facebook.com/ewelina.szoda.9" target="_blank"> 
           <svg class="aside__social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -85,33 +82,38 @@
         <a href="">View projects</a>
       </div>
     </section>
-    <section class="introduction">
-      <div class="introduction__text">
-        <div class="title">Working since 1990</div>
-          <h3>We are Modrox</h3>
-          <strong>Architecture Studio</strong></br></br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip ex ea commodo consequat.
+    <section class="section about">
+      <div class="about__text">
+        <!--second class is more important-->
+        <h5 class="bar bar__right">Working since 1990</h5>
+        <h3><strong>We are Modrox</strong></h3>
+        <h2>Architecture Studio</h2></br></br>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <p>Dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p>
+            Dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-        <div class="styled-text">
+        <h6>
           Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua sedu enim ad minim veniam exercitation ullamco laboris nisi ut aliquip.
-        </div>
-        <a href="">View our projects</a>
+        </h6>
+        <a href="" class="link"> 
+          View our projects
+        </a>
       </div>
-      <div class="introduction__image">
-        <img src=/images/building1.jpg alt="builging1">
-        <div class= "section-introduction__image__square"></div>
+      <div class="square square__right"> 
+        <img class="about__image" src="/images/building1.jpg" alt="builging1"/>
       </div>
-      </section>
     </section>
     <section class="specilization">
       <div class="container">
-        <h3>Our Specilization</h3>
-        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod
-        </p1></br><br>
-        <p2>Temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip ex ea commodo consequat. Dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p2>
+        <h3 class="bar bar__right">Our Specilization</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod
+        </p></br><br>
+        <p>
+          Temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip ex ea commodo consequat. Dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
         <div class="inner">
           <img src=... alt="tool">
           <a href="">Architecture</a>

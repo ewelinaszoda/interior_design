@@ -44,22 +44,9 @@ h1 {
     font-size: 62px;
 }
 h2 {
-    font-family: 'PlayfairDisplay';
-}
-h4 {
     font-family: 'Montserrat', sans-serif;
-    color: $grey-text;
-    font-size: 16px;
-}
-a {
-    font-family: 'Montserrat-Bold', sans-serif;
-}
-
-.title {
-    font-family: 'PlayfairDisplay' , serif;
-    color: $title;
-    font-size: 20px;
-    font-style: italic;
+    color: $color-yellow;
+    font-size: 45px;
 }
 h3 {
     font-family: 'Montserrat', sans-serif;
@@ -67,27 +54,28 @@ h3 {
     font-size: 35px;
     margin: 0 0 22px;
 }
-strong {
-    font-family: 'Montserrat', sans-serif;
-    color: $color-yellow;
-    font-size: 45px;
-}
-p {
-    font-family: 'OpenSans';
-    color: $grey-p;
-    font-size: 16px;
-}
-.styled-text {
-    font-family: 'Lora', serif;
+h4 {
+    font-family: 'Lora' , serif;
     color: $title;
-    font-style: italic;
     font-size: 20px;
 }
-p1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+h5 {
+    font-family: 'PlayfairDisplay' , serif;
+    color: $title;
+    font-size: 20px;
+    font-style: italic;
 }
-p2 {
+h6 {
+    font-family: 'Lora' , serif;
+    color: $title;
+    font-size: 20px;
+    font-style: italic;
+}
+a {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+p {
     font-family: 'OpenSans', sans-serif;
+    color: $grey-p;
     font-size: 16px;
 }

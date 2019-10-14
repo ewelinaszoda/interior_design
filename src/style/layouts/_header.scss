@@ -1,13 +1,15 @@
 .header {
-    //with fixed the element is sticky
+    //with fixed the element is sticky 3d
     position: fixed;
-    width: 90%;
+    z-index: 1;
+    width: 100%;
     // moving header, next to the edge of the screen
     left: 0;
     top: 0;
     background-color: $white;
     height: 70px;
     padding: 0 70px;
+    //2d
     display: flex;
     //horizontal alignment
     justify-content: space-between;
