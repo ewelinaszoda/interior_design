@@ -1,0 +1,24 @@
+.form {
+  margin: 0 60px;
+  padding: 100px 20px;
+  background-color: $color-yellow;
+  &__wrapper {
+  }
+  &__form {
+    width: 50%;
+  }
+}
+.input,
+.textarea {
+  width: 100%;
+  background-color: transparent;
+  margin: 20px 0;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid $font-header;
+  font-size: 21px;
+  color: $font-header;
+}
+.input::placeholder {
+  color: $font-header;
+}
