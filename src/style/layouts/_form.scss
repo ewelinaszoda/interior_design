@@ -1,24 +1,83 @@
 .form {
-  margin: 0 60px;
+  margin: 0 70px;
   padding: 100px 20px;
   background-color: $color-yellow;
+  position: relative;
+  &__image {
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 20px;
+    background-image: url("/images/background-3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
   &__wrapper {
+    display: flex;
+    //zeby nie w nowej lini flex-wrap: nowrap;
   }
   &__form {
     width: 50%;
+    padding-right: 100px;
+  }
+  &__contact {
+    //relative typowe miejsce absolute nietypowe
+    position: relative;
+    width: 50%;
+    border-left: 1px solid $font-header;
+    margin: 50px 0;
+    padding: 0 60px;
+    &__element {
+      display: flex;
+      align-items: flex-start;
+    }
+    h3 {
+      color: $font-header;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p {
+      color: $font-header;
+    }
+    ul {
+      list-style: none;
+    }
+    img {
+      width: 30px;
+      margin-right: 40px;
+    }
+  }
+  .input,
+  .textarea {
+    //padding
+    width: 100%;
+    background-color: transparent;
+    margin: 20px 0;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid $font-header;
+    font-size: 21px;
+    color: $font-header;
+  }
+  .input::placeholder,
+  .textarea::placeholder {
+    color: $font-header;
+    //font
   }
 }
-.input,
-.textarea {
-  width: 100%;
-  background-color: transparent;
-  margin: 20px 0;
-  padding: 20px 0;
-  border: none;
-  border-bottom: 1px solid $font-header;
-  font-size: 21px;
-  color: $font-header;
-}
-.input::placeholder {
-  color: $font-header;
+.button {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 13px;
+  padding: 10px 20px;
+  &--black {
+    background-color: $font-header;
+    color: $color-yellow;
+    text-transform: uppercase;
+    border: 2px solid $font-header;
+    //hover
+  }
 }

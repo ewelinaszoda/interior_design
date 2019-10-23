@@ -1,53 +1,45 @@
-footer {
-  position: relative;
+.footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 70px;
+  margin: 0px 70px;
   padding: 65px 15px 45px 15px;
   background-color: $font-header;
   h3 {
     font-size: 18px;
     color: $white;
   }
+  ul {
+    padding: 0;
+  }
   li {
-    font-family: "'OpenSans", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-size: 15px;
     color: $grey-dark;
     list-style-type: none;
+    padding: 8px 0;
   }
-
-  &__logo {
-    position: absolute;
+  a {
+    font-family: "OpenSans", sans-serif;
+    font-size: 15px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-  &__address {
-  }
-  &__links {
-    list-style-type: none;
-    margin-right: 15px;
-    padding-right: 0;
-    li {
-    }
-    a {
-      font-family: "'OpenSans", sans-serif;
-      font-size: 15px;
-      color: $grey-dark;
-      text-decoration: none;
-      transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-      &:hover {
-        color: $color-yellow;
-      }
-    }
-  }
-  &__copyright {
-    a {
-      font-family: "'OpenSans", sans-serif;
-      font-size: 15px;
+  .link {
+    &--yellow {
       color: $color-yellow;
-      transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
       &:hover {
         color: $white;
       }
     }
+    &--grey {
+      color: $grey-dark;
+      text-decoration: none;
+      &:hover {
+        color: $color-yellow;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__column {
+    width: 25%;
+    padding: 15px;
   }
 }

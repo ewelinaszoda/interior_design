@@ -22,7 +22,7 @@
             <a href="">Home</a>
           </li>
           <li>
-            <a href="">About Us</a>
+            <a href="/about.html">About Us</a>
           </li>
           <li>
             <a href="">Services</a>
@@ -409,9 +409,9 @@
 <section class="reference">
   <div class="reference__content">
     <div class="reference__content__nav">
-      <button class="arrow arrow__left">&#10094;</button>
-      <div class="image"></div>
-      <button class="arrow arrow__right">&#10095;</button>
+      <button class="arrow">&#10094;</button>
+      <img src="/images/author-1.jpg" alt="reference">
+      <button class="arrow">&#10095;</button>
     </div>
     <p>
         Temp incidunt ut labore et dolore magna aliqua uat enim ad minim veniama quis nostrud ullamcoab oris nisi ut aliquip ex ea commodo consequat. Dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -440,21 +440,35 @@
   </div>
 </section>
 <section class="form">
+  <div class="form__image"></div>
   <h3 class="bar bar__right bar__right--black">Get In Touch</h3>
   <div class="form__wrapper">
     <form class="form__form">
       <input class="input" type="text" placeholder="Enter your name">
       <input class="input" type="email" placeholder="Enter your email">
       <textarea class="textarea" placeholder="Message"></textarea>
-      <button>Submit<button>
+      <button class="button button--black">Submit Now</button>
     </form>
+    <div class="form__contact">
+      <ul>
+        <li class="form__contact__element">
+          <img src="/images/pin.svg">
+          <div class="form__contact__wrapper">
+            <h3>Office</h3>
+            <p>Modrox Studio, 215, Mallin Street New Youk, NY 100 254</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 <footer class="footer">
+  <div class="footer__column">
   <a href="" class="footer__logo">
     <img src="/images/footer-logo.png" alt="logo_footer" />
-    </a>
-  <div class="footer__address">
+  </a>
+  </div>
+  <div class="footer__column">
     <h3>Our Address</h3>
     <ul>
       <li>54B, Tailstoi Town 5238 MT,La city, IA 522364</li>
@@ -463,25 +477,24 @@
       <li>+ 1800 568 9875 hello@modrox</li>
     </ul>
   </div>
-  <div class="footer__links">
+  <div class="footer__column">
     <h3>Quick Links</h3>
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Get In Touch</a></li>
+      <li><a class="link--grey" href="">Home</a></li>
+      <li><a class="link--grey" href="/about.html">About Us</a></li>
+      <li><a class="link--grey" href="">Services</a></li>
+      <li><a class="link--grey" href="">Projects</a></li>
+      <li><a class="link--grey" href="">Get In Touch</a></li>
     </ul>
   </div>
-  <div>
-  </div class="footer__copyright">
-  <h3>Copyright</h3>
-  <ul>
-    <li>© 2019 Modrox. All rights reserved. Made by Themearc</li></div></br></br>
-    <li><a href="">Purchase now</a><li>
-  </ul>
-  <div>
-  </footer>
+  <div class="footer__column">
+    <h3>Copyright</h3>
+    <ul>
+      <li>© 2019 Modrox. All rights reserved. Made by Themearc</li></br></br>
+      <li><a class="link--yellow" href="">Purchase now</a><li>
+    </ul>
+  </div>
+</footer>
     <script src="main.bundle.js"></script>
   </body>
 </html>
