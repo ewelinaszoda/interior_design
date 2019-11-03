@@ -3,6 +3,7 @@
   padding: 100px 20px;
   background-color: $color-yellow;
   position: relative;
+  flex-wrap: wrap;
   &__image {
     width: 450px;
     height: 100%;

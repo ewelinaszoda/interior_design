@@ -89,6 +89,17 @@
       position: absolute;
     }
   }
+  &__bottom {
+    &:after {
+      content: "";
+      width: 90px;
+      height: 3px;
+      background-color: $color-yellow;
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+    }
+  }
 }
 .about {
   &__text {
@@ -316,6 +327,68 @@
       transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       &:hover {
         opacity: 1;
+      }
+    }
+  }
+  .background {
+    display: flex;
+    width: 100%;
+    margin: 85px 70px 120px;
+  }
+  .team {
+    &__header {
+      display: flex;
+      position: realtive;
+      margin: 0px 15px;
+      padding: 0px 20px 30px;
+      h3 {
+        padding: 0px 20px 0px 0px;
+      }
+    }
+    &__text {
+      p,
+      h6 {
+        margin-top: 0px;
+        text-align: justify;
+      }
+    }
+  }
+  .about {
+    &__skills {
+      margin: 0px 70px;
+      display: flex;
+      &__image {
+        height: 270px;
+        width: 30%;
+        display: flex;
+      }
+      &__text {
+        width: 70%;
+        a {
+          text-transform: uppercase;
+          color: $font-header;
+          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__meet {
+      position: relative;
+      margin: 0 70px;
+      padding: 100px 60px 60px 180px;
+      &__background {
+        width: 320px;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("/images/specilization.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
       }
     }
   }
