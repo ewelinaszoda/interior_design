@@ -1,0 +1,111 @@
+.hero {
+  margin: 70px;
+  background-image: url("/images/hero.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //punkt odniesienia
+  position: relative;
+  &__text {
+    //to co manewruje
+    position: absolute;
+    background-color: $color-yellow;
+    height: 440px;
+    width: 440px;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 16px;
+    h1 {
+      margin-bottom: 16px;
+    }
+    a {
+      color: $white;
+      text-transform: uppercase;
+      font-size: 13px;
+      text-decoration: none;
+      border-bottom: 2px solid #ecd9ab;
+    }
+  }
+}
+.home-about {
+  &__text {
+    width: 60%;
+    padding: 20px;
+  }
+  a {
+    color: $color-yellow;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.specilization {
+  background-color: $grey-b;
+  position: relative;
+  margin: 0 70px;
+  padding: 100px 60px 60px 180px;
+  h6 {
+    margin: 10px 0;
+  }
+  &__image {
+    width: 320px;
+    height: 100%;
+    //absolute to wypada z blokowego ukladu
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("/images/specilization.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  &__skills {
+    //obok siebie flex, pod soba block
+    display: flex;
+    // zeby z index byl honorowany
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+
+    &__single {
+      width: 250px;
+      text-align: center;
+      svg {
+        display: block;
+        width: 60px;
+        height: 60px;
+        // center by usung auto
+        margin: 0 auto 20px;
+        path,
+        polygon,
+        rect {
+          fill: $color-yellow;
+        }
+      }
+    }
+    .middle {
+      border-right-style: solid;
+      border-left-style: solid;
+      border-color: $grey-dark;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    color: $white;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h3,
+  h6,
+  p {
+    color: $white;
+    position: relative;
+    z-index: 1;
+  }
+}

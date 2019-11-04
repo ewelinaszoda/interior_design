@@ -1,35 +1,3 @@
-.hero {
-  margin: 70px;
-  background-image: url("/images/hero.jpg");
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  //punkt odniesienia
-  position: relative;
-  &__text {
-    //to co manewruje
-    position: absolute;
-    background-color: $color-yellow;
-    height: 440px;
-    width: 440px;
-    top: 0;
-    right: 0;
-    text-align: right;
-    padding: 16px;
-    h1 {
-      margin-bottom: 16px;
-    }
-    a {
-      color: $white;
-      text-transform: uppercase;
-      font-size: 13px;
-      text-decoration: none;
-      border-bottom: 2px solid #ecd9ab;
-    }
-  }
-}
-
 .section {
   display: flex;
   margin: 100px 70px 0 70px;
@@ -46,6 +14,7 @@
     margin: 16px 0;
   }
 }
+
 .bar {
   position: relative;
   // take the space what it is taken reality than 100%
@@ -67,26 +36,18 @@
       }
     }
   }
-  &__middle__right {
-    &:before {
-      content: "";
-      width: 100px;
-      height: 2.5px;
-      left: -110px;
-      bottom: 16px;
-      background-color: $color-yellow;
-      position: absolute;
+  &__middle {
+    &--right {
+      &:before {
+        @extend %bar__middle;
+        left: -110px;
+      }
     }
-  }
-  &__middle__left {
-    &:after {
-      content: "";
-      width: 100px;
-      height: 2.5px;
-      right: -110px;
-      bottom: 16px;
-      background-color: $color-yellow;
-      position: absolute;
+    &--left {
+      &:after {
+        @extend %bar__middle;
+        right: -110px;
+      }
     }
   }
   &__bottom {
@@ -100,20 +61,19 @@
       bottom: -30px;
     }
   }
-}
-.about {
-  &__text {
-    width: 60%;
-    padding: 20px;
-  }
-  a {
-    color: $color-yellow;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-decoration: none;
-    cursor: pointer;
+  &__margined {
+    &:after {
+      content: "";
+      width: 90px;
+      height: 3px;
+      background-color: $color-yellow;
+      position: absolute;
+      left: 0;
+      bottom: -120px;
+    }
   }
 }
+
 .square {
   position: relative;
   &__right {
@@ -130,73 +90,7 @@
     }
   }
 }
-.specilization {
-  background-color: $grey-b;
-  position: relative;
-  margin: 0 70px;
-  padding: 100px 60px 60px 180px;
-  h6 {
-    margin: 10px 0;
-  }
-  &__image {
-    width: 320px;
-    height: 100%;
-    //absolute to wypada z blokowego ukladu
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-image: url("/images/specilization.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  }
-  &__skills {
-    //obok siebie flex, pod soba block
-    display: flex;
-    // zeby z index byl honorowany
-    position: relative;
-    z-index: 1;
-    margin-top: 50px;
 
-    &__single {
-      width: 250px;
-      text-align: center;
-      svg {
-        display: block;
-        width: 60px;
-        height: 60px;
-        // center by usung auto
-        margin: 0 auto 20px;
-        path,
-        polygon,
-        rect {
-          fill: $color-yellow;
-        }
-      }
-    }
-    .middle {
-      border-right-style: solid;
-      border-left-style: solid;
-      border-color: $grey-dark;
-    }
-  }
-  a {
-    text-transform: uppercase;
-    color: $white;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  h3,
-  h6,
-  p {
-    color: $white;
-    position: relative;
-    z-index: 1;
-  }
-}
 .regular {
   display: block;
   margin: 0 70px;
@@ -327,68 +221,6 @@
       transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       &:hover {
         opacity: 1;
-      }
-    }
-  }
-  .background {
-    display: flex;
-    width: 100%;
-    margin: 85px 70px 120px;
-  }
-  .team {
-    &__header {
-      display: flex;
-      position: realtive;
-      margin: 0px 15px;
-      padding: 0px 20px 30px;
-      h3 {
-        padding: 0px 20px 0px 0px;
-      }
-    }
-    &__text {
-      p,
-      h6 {
-        margin-top: 0px;
-        text-align: justify;
-      }
-    }
-  }
-  .about {
-    &__skills {
-      margin: 0px 70px;
-      display: flex;
-      &__image {
-        height: 270px;
-        width: 30%;
-        display: flex;
-      }
-      &__text {
-        width: 70%;
-        a {
-          text-transform: uppercase;
-          color: $font-header;
-          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-    &__meet {
-      position: relative;
-      margin: 0 70px;
-      padding: 100px 60px 60px 180px;
-      &__background {
-        width: 320px;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-image: url("/images/specilization.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
       }
     }
   }

@@ -1,11 +1,11 @@
-//!+tab
+<!--!+tab - podstawowa struktura html usinng Emet-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>About</title>
     <link rel="stylesheet" href="main.bundle.css" />
   </head>
   <body>
@@ -23,7 +23,7 @@
       <div class="header__wrapper">
         <ul class="header__list">
           <li>
-            <a href="">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/about.html">About Us</a>
@@ -104,14 +104,16 @@
         </a>
       </div>
     </aside>
-      <img src="images/about-1.jpg" alt="team" class="background">
+    <section class="regular">
+      <img src="images/about-1.jpg" alt="team" class="about__hero">
+    </section>
     <section class="section about__team">
-      <div class="team__header">
+      <div class="about__team__header">
         <h3 class="bar bar__bottom">
           We are creative architecture team for modern structure of building.
         </h3>
       </div>
-      <div class="team__text">
+      <div class="about__team__text">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod
           temp incidunt ut labore et dolore magna aliqua uat enim ad minim
@@ -430,36 +432,37 @@
     </section>
     <section class="section about__meet">
       <div class="about__meet__background"></div>
-      <div class="team__header">
-        <h3 class="bar bar__bottom">
+      <div class="about__meet__header">
+        <h3 class="bar bar__margined">
          Meet Our Team
         </h3>
         <p>
             Exercitation ullamco laboris nisi ut aliquip exea comm odo cons equat
         </p>
       </div>
-      <div class="team__image">
-        <div class="row">
-          <div class="row__single">
-            <img src="/images/team-1.jpg" alt="sketch designer"/>
-            <a href="/" class="name">Michale Joe</a>
-            <h6>Sketch Designer</h6>
+      <div class="about__meet__gallery">
+        <div class="about__meet__single">
+          <img src="/images/team-1.jpg" alt="sketch designer"/>
+          <a href="/" class="name">Michale Joe</a>
+          <h3>Sketch Designer</h3>
+        </div>
+        <div class="about__meet__single">
+          <img src="/images/team-2.jpg" alt="sketch designer"/>
+          <a href="/" class="name">Merry Joe</a>
+          <h3>Sketch Designer</h3>
+        </div>
+        <div class="about__meet__single">
+          <img src="/images/team-3.jpg" alt="sketch designer"/>
+          <a href="/" class="name">Robert Joe</a>
+          <h3>Sketch Designer</h3>
+        </div>
+        <div class="about__meet__single">
+          <div class="about__meet__single__image">
+
+          <img src="/images/team-4.jpg" alt="sketch designer"/>
           </div>
-          <div class="row__single">
-            <img src="/images/team-2.jpg" alt="sketch designer"/>
-            <a href="/" class="name">Merry Joe</a>
-            <h6>Sketch Designer</h6>
-        <div class="row">
-          <div class="row__single">
-            <img src="/images/team-3.jpg" alt="sketch designer"/>
-            <a href="/" class="name">Robert Joe</a>
-            <h6>Sketch Designer</h6>
-          </div>
-          <div class="row__single">
-            <img src="/images/team-4.jpg" alt="sketch designer"/>
-            <a href="/" class="name">David Joe</a>
-            <h6>Sketch Designer</h6>
-          </div>
+          <a href="/" class="name">David Joe</a>
+          <h3>Sketch Designer</h3>
         </div>
       </div>
     </section>
@@ -514,7 +517,7 @@
           <div class="footer__column">
             <h3>Quick Links</h3>
             <ul>
-              <li><a class="link--grey" href="">Home</a></li>
+              <li><a class="link--grey" href="/">Home</a></li>
               <li><a class="link--grey" href="/about.html">About Us</a></li>
               <li><a class="link--grey" href="">Services</a></li>
               <li><a class="link--grey" href="">Projects</a></li>

@@ -1,0 +1,134 @@
+.about {
+  &__hero {
+    width: 100%;
+  }
+
+  &__team {
+    display: flex;
+    &__header {
+      width: 40%;
+      margin: 0px 15px;
+      padding: 0px 20px 30px;
+      h3 {
+        padding: 0px 20px 0px 0px;
+      }
+    }
+    &__text {
+      width: 50%;
+      p,
+      h6 {
+        margin-top: 0px;
+        text-align: justify;
+      }
+    }
+  }
+
+  &__skills {
+    margin: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $grey-p;
+    &__image {
+      width: 40%;
+      img {
+        // 100% od nadrzednego elementu
+        width: 100%;
+      }
+    }
+    &__text {
+      width: 55%;
+      a {
+        text-transform: uppercase;
+        color: $font-header;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__meet {
+    position: relative;
+    margin: 0 70px;
+    padding: 60px 0;
+    &__background {
+      width: 320px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: url("/images/specilization.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      opacity: 0.2;
+    }
+    &__header {
+      width: 40%;
+      margin: 0px 15px;
+      padding: 0px 20px 30px;
+      p {
+        font-size: 20px;
+      }
+    }
+    &__gallery {
+      width: 60%;
+      display: flex; //zeby sie zawijalo
+      flex-wrap: wrap; //bez tego wszytskie cztery w jednej lini
+    }
+    &__single {
+      width: calc(50% - 20px);
+      padding: 10px;
+      text-align: center;
+      //bemowe zawsze wyzej
+      &:hover {
+        .about__meet__single__image {
+          &::before {
+            height: 100%;
+            opacity: 1;
+          }
+        }
+      }
+      &__image {
+        position: relative;
+        margin-bottom: 10px;
+        height: 210px;
+        overflow: hidden;
+        // pseudoelement dla img nie dziala i trzeba zrobic wrapper
+        &::before {
+          content: "";
+          width: 100%;
+          height: 80%;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 0; // spozycjonowanie
+          left: 0; //spozycjonowanie
+          opacity: 0;
+          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+      }
+
+      a {
+        color: $font-header;
+        font-size: 18px;
+        text-decoration: none;
+        //cursor: pointer; nie potrzebuje, zawsze jest
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      h3 {
+        font-size: 15px;
+        padding: 10px 0;
+        color: $grey-p;
+        opacity: 0.7;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
