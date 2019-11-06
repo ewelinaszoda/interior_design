@@ -48,16 +48,10 @@
     }
   }
   &__burger {
-    display: flex;
-    width: 40px;
-    height: 60px;
-    margin: 10px 10px;
-    position: relative;
-    top: 0;
-    right: 0;
-    padding: 8px 50px;
-    background: $color-yellow;
-    border-radius: 5px;
+    width: 45px;
+    height: 33px;
+    margin: 6px 0;
+    background-color: $color-yellow;
     @media (min-width: 600px) {
       list-style-type: flex;
     }
@@ -68,19 +62,11 @@
       display: none;
     }
     &__line {
-      display: block;
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 14%;
-      width: 80%;
+      width: 30px;
+      height: 3px;
       border-radius: 20px;
-      &--white {
-        background: $white;
-      }
-      &--yellow {
-        background: $color-yellow;
-      }
+      margin: 6px auto;
+      background-color: $white;
     }
   }
   &__search {
